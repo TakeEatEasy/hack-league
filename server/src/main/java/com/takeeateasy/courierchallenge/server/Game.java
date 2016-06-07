@@ -204,13 +204,13 @@ public class Game {
                     courier.getPosition().setX(courier.getPosition().getX() + 2);
                 }else if (Action.DROP_ORDER.equals(action.getAction())) {
                     for (Order order : new ArrayList<Order>(state.getOrders())) {
-                        if (order.getId() == action.getIdOrder() && order.getStatus() == Order.STATUS_ONGOING) {
+                        if (order.getId() == action.getIdOrder() && order.getStatus() == 1) {
                             if (courier.getPosition().equals(order.getTo())) {
                                 player.setScore(player.getScore() + order.getValue());
                                 state.getOrders().remove(order);
                             } else {
                                 //Should not happen anymore
-                                order.setStatus(Order.STATUS_TODO);
+                                order.setStatus(0);
                                 order.setFrom(new Position(courier.getPosition()));
                                 order.setIdCourier(0);
                             }
@@ -221,7 +221,7 @@ public class Game {
                     for (Order order : new ArrayList<Order>(state.getOrders())) {
                         if (order.getId() == action.getIdOrder()) {
                             if (courier.getPosition().equals(order.getFrom())) {
-                                order.setStatus(Order.STATUS_ONGOING);
+                                order.setStatus(1);
                                 order.setIdCourier(courier.getId());
                                 break;
                             } else {
@@ -232,7 +232,7 @@ public class Game {
                 } else if (Action.KICK_PLAYER.equals(action.getAction())){
                     for(Order order : state.getOrders()){
                         if(order.getId() == action.getIdOtherCourier()){
-                            order.setStatus(Order.STATUS_TODO);
+                            order.setStatus(0);
                             //Assume same position as current courier
                             order.setFrom(courier.getPosition());
                             order.setId(0);
@@ -296,7 +296,7 @@ public class Game {
                     }
                 } else {
                     for (Order order : state.getOrders()) {
-                        if (order.getStatus() == Order.STATUS_TODO) {
+                        if (order.getStatus() == 0) {
                             if (order.getFrom().getX() == curX && order.getFrom().getY() == curY) {
                                 //if no current action
                                 if (getOrderFromCourier(courier, state.getOrders()) == null) {

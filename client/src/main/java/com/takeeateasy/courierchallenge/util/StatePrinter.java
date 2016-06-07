@@ -26,13 +26,13 @@ public class StatePrinter {
                         }
                     }
                     for (Order order : state.getOrders()) {
-                        if (order.getStatus() == Order.STATUS_TODO) {
+                        if (order.getStatus() == 0) {
                             if (order.getFrom().getY() == y && order.getFrom().getX() == x) {
                                 result.append("O");
                                 printed = true;
                             }
                         }
-                        if (order.getStatus() == Order.STATUS_ONGOING) {
+                        if (order.getStatus() == 1) {
                             if (order.getTo().getY() == y && order.getTo().getX() == x) {
                                 result.append("D");
                                 printed = true;
