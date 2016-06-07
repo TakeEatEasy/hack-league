@@ -1,5 +1,4 @@
-# hack-league
-Hack League Challenge
+# Hack League Challenge - Take Eat Easy
 
 This project contains 4 modules:
 
