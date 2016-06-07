@@ -1,12 +1,16 @@
 
 # Java Client
 
-To install dependencies & generate the jar file:
+* To install dependencies & generate the jar file:
 mvn clean install
 
-To run the client:
-
+* To run the client:
 java -jar target/client-1.0-SNAPSHOT.one-jar.jar <yourname> <server url>
+
+
+If you want to run it from your IDE: main class is ClientRunner
+
+Class where you should implement you own code:  SimpleIA
 
 
 
