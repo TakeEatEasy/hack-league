@@ -1,7 +1,7 @@
 
 # Java Client
 
-To install dependencies:
+To install dependencies & generate the jar file:
 mvn clean install
 
 To run the client:
