@@ -12,9 +12,9 @@ To generate runnables jars for the  Java client & Controller & Server:  simply r
 
 Note: hosted server are already available at:
 
-http://hackleague1.takeeateasy.com
-http://hackleague2.takeeateasy.com
-http://hackleague3.takeeateasy.com
-http://hackleague4.takeeateasy.com
+* http://hackleague1.takeeateasy.com
+* http://hackleague2.takeeateasy.com
+* http://hackleague3.takeeateasy.com
+* http://hackleague4.takeeateasy.com
 
 More information on readmes inside every modules
