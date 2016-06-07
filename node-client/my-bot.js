@@ -110,5 +110,5 @@ function start () {
     }
 }
 
-console.log('starting bot on ${argv.table}');
+console.log(`starting courier bot on ${argv.table}`);
 start();

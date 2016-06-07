@@ -1,0 +1,59 @@
+
+
+Sample "PlayTurn"
+
+{
+  "state": {
+    "couriers": [
+      {
+        "id": 1,
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "name": "name",
+        "score": 0,
+        "fighter": false,
+        "electric": false
+      }
+      ...
+    ],
+    "orders": [
+      {
+        "from": {
+          "x": 22,
+          "y": 11
+        },
+        "to": {
+          "x": 28,
+          "y": 1
+        },
+        "id": 27,
+        "status": 0,
+        "idCourier": 0,
+        "value": 18
+      },
+     ...
+    ],
+    "turn": 223
+  },
+  "possibleActions": [
+    {
+      "action": "MOVE_DOWN",
+      "idCourier": 1,
+      "turn": 223
+    },
+    {
+      "action": "MOVE_UP",
+      "idCourier": 1,
+      "turn": 223
+    }
+  ],
+  "idCourier": 1,
+  "score": 0
+}
+
+
+
+Sample Init Game
+
