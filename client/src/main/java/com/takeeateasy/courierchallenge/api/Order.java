@@ -1,8 +1,6 @@
 package com.takeeateasy.courierchallenge.api;
 
 public class Order {
-    public static final int STATUS_TODO = 0;
-    public static final int STATUS_ONGOING = 1;
 
     private Position from;
     private Position to;

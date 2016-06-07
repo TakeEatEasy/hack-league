@@ -20,11 +20,11 @@ public class Game {
 
     public static final boolean KICK_ENABLED = true;
     public static final boolean ELECTRIC_ENABLED = true;
-    public static final int PRICE_UPGRADE_KICK = 1;
-    public static final int PRICE_UPGRADE_ELECTRIC = 1;
+    public static final int PRICE_UPGRADE_KICK = 150;
+    public static final int PRICE_UPGRADE_ELECTRIC = 100;
 
     public static final int MAX_TURN = 400;
-    private static final long SLEEP_TIME = 500;
+    private static final long SLEEP_TIME = 800;
 
 
     SocketIOServer server;
