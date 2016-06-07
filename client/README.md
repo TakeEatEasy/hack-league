@@ -1,6 +1,5 @@
 
 # Java Client
-# for the Hack league Challenge: Take Eat Easy
 
 To install dependencies:
 mvn clean install
