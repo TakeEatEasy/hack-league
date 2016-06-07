@@ -1,0 +1,76 @@
+Example of 'init' data response
+
+{
+  "city": {
+    "roads": [
+    		  [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  			  [ 0, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 ],
+			  [ 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0 ],
+			  ...
+			   ]
+    "distances": {
+      "3-15;7-1": 18,
+      ...
+    }
+  },
+  "maxTurns": 0
+}
+
+
+Example of 'onTurn' data response
+
+onTurn
+{
+  "state": {
+    "couriers": [
+      {
+        "idPlayer": 1,
+        "position": {
+          "x": 14,
+          "y": 7
+        },
+        "canKick": false,
+        "electric": false
+      }
+    ],
+    "orders": [
+      {
+        "from": {
+          "x": 4,
+          "y": 16
+        },
+        "to": {
+          "x": 15,
+          "y": 2
+        },
+        "id": 530597,
+        "status": 0,
+        "idPlayer": 0,
+        "value": 5
+      },
+      ...
+    ],
+    "turn": 249
+  },
+  "possibleActions": [
+    {
+      "action": "MOVE_RIGHT",
+      "idPlayer": 11,
+      "turn": 249
+    },
+    {
+      "action": "MOVE_LEFT",
+      "idPlayer": 11,
+      "turn": 249
+    },
+    {
+      "action": "PICKUP_ORDER",
+      "idPlayer": 11,
+      "idOrder": 530614,
+      "turn": 249
+    },
+    ...
+  ],
+  "idPlayer": 1,
+  "score": 0
+}

@@ -1,0 +1,14 @@
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{ISO8601} [%-20.20thread] %-5level [%-32.32logger{32}] - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <!--		<appender-ref ref="FILE" />-->
+    </root>
+
+    <logger name="org.hibernate.SQL" level="info"/>
+</configuration>
