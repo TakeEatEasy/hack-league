@@ -22,15 +22,11 @@ function start () {
 		//This method is called at each "new game" or when you rejoin a game.
         //data contains all the "static informations" that will not change during the game:
         init(data){
-            console.log("init");
             city = data.city;
-            console.log('Roads')
-            console.log(city.roads);
         },
 
         //onTurn is called each time you can play a turn
     	onTurn(data, respond){
-      	  	console.log("onTurn " + respond.turn);
 			console.log(JSON.stringify(data,null,2));
 
             //Fetch my courier and possible order from the state
@@ -57,10 +53,10 @@ function start () {
 			console.log(myCourier);
             console.log("My Order");
             console.log(myOrder);
-            //Game logic starts here:
-            //If no current order
 
-            //Go to 1,1 position
+            //Game logic starts here
+
+            //Sample response: Go to 1,1 position
 			respond(getDirection(data.possibleActions,myCourier.position,{x:1,y:2}));
     	}
     });
@@ -72,7 +68,7 @@ function start () {
         return city.distances[key];
     }
 
-    //Get the best direction to go from "from" to "to" position based on the pre-computed distances
+    //Get the best direction to go from "from" to "to" positions based on the pre-computed distances & possible actions
     function getDirection(possibleActions,from,to){
         var bestMove;
         var bestMoveDistance = Number.MAX_VALUE;
@@ -114,5 +110,5 @@ function start () {
     }
 }
 
-console.log(`starting courier bot on ${argv.table}`);
+console.log('starting bot on ${argv.table}');
 start();
