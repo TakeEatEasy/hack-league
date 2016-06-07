@@ -23,7 +23,7 @@ public class ClientRunner{
 
     private Courier courier;
     private GameInfo gameInfo;
-    private IA ia;
+    private SimpleIA ia;
 
     public ClientRunner(String name, String serverUrl) {
         try {
