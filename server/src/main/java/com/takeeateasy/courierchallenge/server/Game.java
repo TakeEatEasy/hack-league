@@ -51,7 +51,7 @@ public class Game {
         city = new City();
         players = new ConcurrentHashMap<String, PlayerClient>();
 
-        readMapFromFile2("/map2.txt");
+        readMapFromFile2("/map.txt");
         //createSampleMap(mapSize);
         //createRestaurants(state, nbRestaurants);
 
