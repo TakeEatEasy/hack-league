@@ -17,4 +17,4 @@ Note: hosted server are already available at:
 * http://hackleague3.takeeateasy.com
 * http://hackleague4.takeeateasy.com
 
-More information on readmes inside every modules
+More detailed information inside every modules READMEs
