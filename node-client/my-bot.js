@@ -22,6 +22,7 @@ function start () {
 		//This method is called at each "new game" or when you rejoin a game.
         //data contains all the "static informations" that will not change during the game:
         init(data){
+            console.log(JSON.stringify(data,null,2));
             city = data.city;
         },
 

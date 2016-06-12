@@ -287,7 +287,6 @@ public class Controller extends Application {
         stack.push(Paint.valueOf("red"));
         stack.push(Paint.valueOf("orange"));
         stack.push(Paint.valueOf("aqua"));
-        stack.push(Paint.valueOf("yellow"));
         stack.push(Paint.valueOf("pink"));
         stack.push(Paint.valueOf("blue"));
         stack.push(Paint.valueOf("violet"));

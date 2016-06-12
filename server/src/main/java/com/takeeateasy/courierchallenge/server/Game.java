@@ -79,7 +79,7 @@ public class Game {
     private void addOrders(State state) {
         int nbCouriers = state.getCouriers().size();
         int nbOrders = state.getOrders().size();
-        int missingOrders = nbCouriers + (int) Math.floor(Math.random() * nbCouriers * 3) - nbOrders+1;
+        int missingOrders = nbCouriers + (int) Math.floor(Math.random() * nbCouriers * 2) - nbOrders+1;
         if (missingOrders > 0) {
             for (int i = 0; i < missingOrders; i++) {
                 addOrder(state);
@@ -94,7 +94,7 @@ public class Game {
         state.getOrders().add(order);
         Position restaurant = restaurantsPosition.get((int) (restaurantsPosition.size() * Math.random()));
         order.setFrom(restaurant);
-        order.setValue(DistanceUtil.getDistance(order.getFrom(),order.getTo(),city)*2+10);
+        order.setValue(DistanceUtil.getDistance(order.getFrom(),order.getTo(),city)*2+20);
     }
 
 
